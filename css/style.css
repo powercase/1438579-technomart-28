@@ -1,0 +1,318 @@
+/* Variables */
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --wight: #FFFFFF;
+  --special-ylellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --error: #BA2732;
+  --deep-blue: #293449;
+  --fiolet: #32425C;
+  --purpur: #161D29;
+  --elis: #F3F7F9;
+  --black: #000000;
+  --cobalt: #1D2739;
+  --telegrey: #888888;
+  --light-grey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
+}
+
+  /* Global */
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum","PT Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation - header */
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wight);
+  background-color: var(--basic-background);
+}
+
+
+
+/* Wrapper - самая верхняя полоса с логотипом */
+
+/* logo background */
+.main-navigation-wrapper img {
+background-color: var(--basic-red);
+box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.main-navigation-wrapper img:active {
+  background: var(--error);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+.main-navigation-wrapper {
+  background-color: var(--deep-blue);
+}
+
+.order-main-navigation-wrapper {
+background-color: var(--basic-green);
+}
+
+.order-main-navigation-wrapper a:hover {
+background-color: var(--success);
+}
+
+.main-navigation-wrapper a:active {
+color: rgba(255, 255, 255, 0.5);
+}
+
+.order-main-navigation-wrapper a:active {
+background-color: var(--basic-green);
+}
+
+.bookmark-cart-main-navigation-wrapper a:active {
+  background-color: var(--purpur);
+}
+
+
+/* User navigation - на сером фоне в header между верхней полосой и главным меню*/
+.p1-user-navigation {
+font-family: Cuprum;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: var(--basic-red);
+}
+
+.p2-user-navigation {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--fiolet);
+  }
+
+.tel-user-navigation {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: var(--basic-red);
+  background: var(--elis);
+ border: 3px solid var(--wight);
+box-sizing: border-box;
+}
+
+.login-signin-user-navigation {
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+color: var(--black);
+background: rgba(0, 0, 0, 0.0001);
+}
+
+.login-signin-user-navigation:hover {
+color: var(--basic-red);
+}
+.login-signin-user-navigation:active {
+color: var(--basic-greylight);
+}
+
+
+/* Main menu in header */
+.site-navigation {
+  list-style: none;
+  background-color: var(--fiolet);
+}
+
+.company-site-navigation:hover {
+  background-color: var(--deep-blue);
+  box-shadow: inset 0px -5px 0px var(--deep-blue);
+}
+
+.company-site-navigation:active {
+  background-color: var(--cobalt);
+box-shadow: inset 0px -5px 0px var(--deep-blue);
+opacity: 0.5;
+}
+
+/* About company - раздел перед footer*/
+.about-company {
+  background-color: var(--telegrey);
+  list-style: none;
+  font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+color: var(--black);
+}
+
+h2.about-company {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+    color: var(--black);
+  }
+
+  li.about-company {
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+color: var(--black);
+  }
+
+ /* Href - buttons */
+
+.a1-about-company {
+  font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: var(--wight);
+background: var(--basic-red);
+background-size: 220px 38px;
+}
+
+
+.a2-about-company {
+  font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: var(--wight);
+background: var(--basic-red);
+background-size: 300px 38px;
+}
+
+
+
+/* Footer  - upper part */
+.footer-main-navigation {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: var(--fiolet);
+}
+
+.footer-main-navigation img {
+background-color: var(--basic-red);
+box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.a1-footer-main-navigation {
+  color: var(--basic-background);
+}
+
+.a1-footer-main-navigation a:hover {
+  text-decoration-line: underline;
+}
+
+.a1-footer-main-navigation a:active {
+  color: var(--basic-background);
+mix-blend-mode: normal;
+opacity: 0.5;
+}
+
+.a2-footer-main-navigation {
+  color: var(--special-yellowlight);
+}
+
+.a2-footer-main-navigation a:hover {
+  text-decoration-line: underline;
+}
+
+.a2-footer-main-navigation a:active {
+  mix-blend-mode: normal;
+opacity: 0.5;}
+
+
+/* Footer  - bottom part */
+.footer-wrapper {
+  background: rgba(0, 0, 0, 0.0001);
+}
+
+.footer-wrapper p {
+  font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: var(--wight);
+}
+
+.social-button {
+  background: linear-gradient(0deg, #212A3A, #212A3A);
+}
+
+.social-button:hover,
+.social-button:active {
+  background: var(--basic-red);
+}
+
+
+.a2-footer-wrapper {
+  color: var(--special-yellowlight);
+}
+
+.a2-footer-wrapper a:hover {
+  text-decoration-line: underline;
+}
+
+.a2-footer-wrapper a:active {
+  color: var(--wight);
+}
+
+.pop-up {
+  display: none;
+}
