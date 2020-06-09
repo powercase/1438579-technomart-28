@@ -21,13 +21,14 @@
   --telegrey: #888888;
   --light-grey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
   --neutral-grey: #A9A9A9;
+  --dark-blue: #212A3A;
 }
 
 body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "Times New Roman", Times, serif;
+  font-family: "Cuprum", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
@@ -48,17 +49,12 @@ header {
   background-color: var(--basic-background);
 }
 
-.top-wrapper img {
+.logo-pic {
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.top-wrapper img:active {
-  background: var(--error);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-}
-
-.top-wrapper {
+.logo:active {
   background-color: var(--deep-blue);
 }
 
@@ -67,15 +63,12 @@ header {
   color: var(--white);
 }
 
-.checkout a:hover {
+.checkout:hover {
   background-color: var(--success);
 }
 
-.top-wrapper a:active {
+.checkout:active {
   color: rgba(255, 255, 255, 0.5);
-}
-
-.checkout a:active {
   background-color: var(--basic-green);
 }
 
@@ -83,7 +76,7 @@ header {
   color: var(--white);
 }
 
-.bookmark-cart a:active {
+.bookmark-cart:active {
   background-color: var(--purpur);
 }
 
@@ -113,7 +106,6 @@ header {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
-  background: rgba(0, 0, 0, 0.0001);
 }
 
 .login-signin:hover {
@@ -127,6 +119,12 @@ header {
 .main-menu {
   list-style: none;
   background-color: var(--fiolet);
+}
+
+.company {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
 }
 
 .company:hover {
@@ -143,22 +141,22 @@ header {
 .about-company {
   background-color: var(--telegrey);
   list-style: none;
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
 }
 
-.about-company h2 {
-  font-family: "Cuprum", "Times New Roman", Times, serif;
+.company-details {
+  font-family: "Cuprum", "Verdana", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.about-company li {
-  font-family: "Cuprum", "Times New Roman", Times, serif;
+.delivery-list {
+  font-family: "Cuprum", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
@@ -171,7 +169,6 @@ header {
   text-transform: uppercase;
   color: var(--white);
   background: var(--basic-red);
-  background-size: 220px 38px;
 }
 
 .help-btn {
@@ -181,55 +178,42 @@ header {
   text-transform: uppercase;
   color: var(--white);
   background: var(--basic-red);
-  background-size: 300px 38px;
 }
 
-.bottom-navigation {
+.footer-navigation {
+  color: var(--special-yellowlight);
   background-color: var(--fiolet);
 }
 
-.bottom-navigation img {
-  background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-}
-
-.bottom-menu {
+.bottom-link {
   color: var(--basic-background);
 }
 
-.bottom-menu a:hover {
+.bottom-link:hover {
   text-decoration-line: underline;
 }
 
-.bottom-menu a:active {
+.bottom-link:active {
   color: var(--basic-background);
   opacity: 0.5;
 }
 
-.bottom-navigation {
-  color: var(--special-yellowlight);
-}
-
-.bottom-navigation a:hover {
+.footer-link:hover {
   text-decoration-line: underline;
 }
 
-.bottom-navigation a:active {
+.footer-link:active {
   opacity: 0.5;
 }
 
-.bottom-wrapper {
-  background: rgba(0, 0, 0, 0.0001);
-}
-
-.bottom-wrapper p {
+.bottom-text {
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
 }
 
 .social-button {
-  background: linear-gradient(0deg, #212A3A, #212A3A);
+  background: var(--dark-blue);
 }
 
 .social-button:hover,
@@ -241,11 +225,11 @@ header {
   color: var(--special-yellowlight);
 }
 
-.feedback-developedby a:hover {
+.feedback-developedby:hover {
   text-decoration-line: underline;
 }
 
-.feedback-developedby a:active {
+.feedback-developedby:active {
   color: var(--white);
 }
 
@@ -260,10 +244,9 @@ header {
 .person {
   font-size: 21px;
   line-height: 21px;
-  background: rgba(0, 0, 0, 0.0001);
 }
 
-.person a:active {
+.person:active {
   color: var(--basic-greylight);
 }
 
@@ -273,51 +256,51 @@ header {
   color: var(--fiolet);
 }
 
-.personal-data a:hover {
+.personal-data:hover {
   color: var(--basic-red);
 }
 
-.personal-data a:active {
+.personal-data:active {
   color: var(--basic-greylight);
 }
 
 .breadcrumbs {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .filter-name {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.filter-items li {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+.filter-items {
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
 }
 
 .filter-btn {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 .product-name {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
 .old-price {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -326,11 +309,17 @@ header {
 }
 
 .new-price {
-  font-family: "PT Sans", "Times New Roman", Times, serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
   background: var(-basic-red);
+}
+
+.main-menu-items {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
 }
