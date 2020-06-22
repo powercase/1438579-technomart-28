@@ -44,7 +44,7 @@ img {
   height: auto;
 }
 
-header {
+.main-header {
   color: var(--white);
   background-color: var(--basic-background);
 }
@@ -181,8 +181,8 @@ header {
 }
 
 .footer-navigation {
-  color: var(--special-yellowlight);
   background-color: var(--fiolet);
+  list-style: none;
 }
 
 .bottom-link {
@@ -196,6 +196,12 @@ header {
 .bottom-link:active {
   color: var(--basic-background);
   opacity: 0.5;
+}
+
+.footer-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--special-yellowlight);
 }
 
 .footer-link:hover {
